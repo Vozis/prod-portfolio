@@ -1,0 +1,29 @@
+.layout {
+  min-height: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+'header'
+'main'
+'footer';
+}
+
+.layout > header {
+  grid-area: header;
+}
+
+.layout > main {
+  grid-area: main;
+  max-width: 1200px;
+}
+
+.layout > footer {
+  grid-area: footer;
+  margin-top: 20px;
+}
+
+.containerContent {
+  @apply mx-auto pt-24 max-md:pt-16 animate-fade px-layout max-md:px-5 max-sm:px-4;
+}

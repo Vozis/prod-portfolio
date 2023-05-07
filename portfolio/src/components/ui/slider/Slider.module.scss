@@ -1,0 +1,18 @@
+.slider {
+  width: 100%;
+ @apply relative;
+
+}
+
+
+.slide {
+//@apply h-[calc(100%-50px)];
+}
+
+.slideContent {
+  @apply flex flex-col justify-between h-full gap-2;
+}
+
+.navigation {
+  @apply absolute top-96 z-3 right-3 flex flex-col gap-5;
+}

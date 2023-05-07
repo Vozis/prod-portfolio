@@ -1,0 +1,41 @@
+.collectionItem {
+  background-image: linear-gradient(316.1deg, #F323C6 3.36%, #DA3C58 96.03%);
+  height: 200px;
+  @apply shadow-lg overflow-hidden relative animate-fade rounded-3xl p-5;
+
+  .linkHead {
+    @apply absolute text-white font-medium text-2xl transition-all duration-500 ease-in-out;
+  }
+
+  .linkDescription {
+    @apply text-white font-light text-lg transition-all translate-y-52 duration-500 ease-in-out;
+
+  }
+
+  .linkImage {
+    @apply absolute top-28 -right-12 max-md:-right-24 shadow-2xl transition-all duration-500 ease-in-out w-72 h-40;
+  }
+
+  .linkActions {
+    @apply absolute top-36 left-6 flex gap-4 translate-y-14 opacity-0 transition-all duration-500 delay-100 ease-in-out;
+  }
+
+  &:hover {
+    .linkHead {
+      @apply -translate-y-28 opacity-0;
+    }
+
+    .linkDescription {
+      @apply translate-y-0;
+    }
+
+    .linkImage {
+      @apply translate-x-12 translate-y-7 opacity-20;
+    }
+
+    .linkActions {
+      @apply translate-y-0 opacity-100;
+    }
+  }
+
+}
