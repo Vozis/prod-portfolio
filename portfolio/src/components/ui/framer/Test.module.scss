@@ -1,0 +1,11 @@
+.card {
+  @apply bg-green-300 p-10;
+
+  & p {
+    line-height: 200%;
+  }
+}
+
+.expand {
+  width: 30rem;
+}

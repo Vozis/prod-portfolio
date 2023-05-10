@@ -60,16 +60,16 @@ $color: #b3e5fc;
   @include btn();
 
   .icon {
-    @include icon(3px, 40px);
+    @include icon(2px, 30px);
           border-radius: 4px;
 
     &:before{
-      @include icon-before(3px, 40px, -10px);
+      @include icon-before(2px, 30px, -8px);
       border-radius: 4px;
     }
 
     &:after{
-      @include icon-after(3px, 40px, 10px);
+      @include icon-after(2px, 30px, 8px);
       border-radius: 4px;
     }
   }
@@ -80,11 +80,11 @@ $color: #b3e5fc;
       background: transparent;
 
       &:before{
-        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+        transform: rotateZ(45deg) scaleX(1.25) translate(5px, 5px);
       }
 
       &:after{
-        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+        transform: rotateZ(-45deg) scaleX(1.25) translate(5px, -5px);
       }
     }
   }

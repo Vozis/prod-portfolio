@@ -6,7 +6,14 @@ import { IMarquee } from '@/ui/marquee/marquee.data';
 
 const MarqueeEl: FC<{ items: IMarquee[] }> = ({ items }) => {
   return (
-    <Marquee autoFill loop={0} gradient>
+    <Marquee
+      autoFill
+      loop={0}
+      gradient
+      className={
+        'max-w-6xl max-lg:max-w-5xl max-md:max-w-xl max-sm:max-w-xs mx-auto flex items-center'
+      }
+    >
       {items.length &&
         items.map(item => (
           <Image

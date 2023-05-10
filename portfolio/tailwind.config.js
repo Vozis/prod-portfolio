@@ -53,6 +53,11 @@ module.exports = {
         1: '1',
         2: '2',
         3: '3',
+        4: '4',
+        5: '5',
+        6: '6',
+        7: '7',
+        8: '8',
       },
       keyframes: {
         fade: {
@@ -128,7 +133,7 @@ module.exports = {
             alignItems: 'center',
           },
           '.image-like-bg': {
-            objectPosition: 'center',
+            objectPosition: 'top',
             objectFit: 'cover',
             pointerEvents: 'none',
           },

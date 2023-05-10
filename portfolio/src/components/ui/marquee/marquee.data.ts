@@ -37,7 +37,7 @@ export const marqueeData: IMarquee[] = [
     url: '/images/marquee/vite.svg',
   },
   {
-    name: ‘Nx’,
+    name: 'Nx',
     url: '/images/marquee/nx.svg',
   },
 ];

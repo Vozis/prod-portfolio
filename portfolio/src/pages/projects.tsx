@@ -10,13 +10,3 @@ const ProjectsPage: NextPage = () => {
 };
 
 export default ProjectsPage;
-
-// export const getStaticProps = async () => {
-//   const { data } = await ProjectService.getAll();
-//
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// };

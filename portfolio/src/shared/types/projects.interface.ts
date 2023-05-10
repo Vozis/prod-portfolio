@@ -10,4 +10,8 @@ export interface IProjectItem {
 
 export interface IProjectItems {
   items: IProjectItem[];
+  previousPage: number | null;
+  nextPage: number | null;
+  total: number;
+  totalPages: number;
 }

@@ -39,7 +39,6 @@ const Navigation: FC = () => {
         <BurgerMenu
           className={'absolute top-0.5 right-0.5 z-20'}
           isOpen={isMenuOpen}
-          // className={'absolute z-10 right-5 top-5'}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
       )}

@@ -27,7 +27,7 @@ export const useCollection = () => {
     isSuccess,
     isFetchingNextPage,
   } = useInfiniteQuery(
-    ['get'],
+    ['get-design-items'],
     ({ pageParam = 1 }) => DesignService.getAll(pageParam),
     {
       getNextPageParam: lastPage => lastPage.data.nextPage ?? undefined,
