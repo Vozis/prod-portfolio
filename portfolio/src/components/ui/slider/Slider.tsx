@@ -10,11 +10,11 @@ import SliderItem from '@/ui/slider/SliderItem';
 import { ISlider } from '@/ui/slider/slider.interface';
 import { useSlider } from '@/ui/slider/useSlider';
 
-import { IProjectItems } from '@/shared/types/projects.interface';
+import { IProjectItem, IProjectItems } from '@/shared/types/projects.interface';
 
 import styles from './Slider.module.scss';
 
-const Slider: FC<IProjectItems> = ({ items }) => {
+const Slider: FC<{ items: IProjectItem[] }> = ({ items }) => {
   const isMobile = useMediaQuery('(max-width:768px)');
   const ref = useRef<SwiperRef>(null);
 

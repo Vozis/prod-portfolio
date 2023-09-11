@@ -4,6 +4,30 @@
 }
 
 .menuContainer {
+  @apply flex gap-4 justify-between items-center max-w-[1200px] mx-auto z-10;
+  @apply px-layout max-md:px-5 max-sm:px-4 py-5 max-lg:py-3 transition-all duration-300 ease-in-out;
+
+  @media screen and (max-width: 650px) {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    overflow-y: auto;
+    padding: 30px;
+    visibility: hidden;
+
+  }
+}
+
+.menuContainerLeftRight {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
@@ -43,7 +67,7 @@
   @apply flex justify-between gap-5 max-w-full;
 
   @media (max-width: 425px) {
-@apply flex-col justify-center gap-10 items-center;
+    @apply flex-col justify-center gap-10 items-center;
   }
 }
 

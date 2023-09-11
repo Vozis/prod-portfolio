@@ -7,10 +7,13 @@ import { useLockedBody } from 'usehooks-ts';
 import LinkButton from '@/ui/button/LinkButton';
 import { useCards } from '@/ui/cards/UseCards';
 import SkeletonLoader from '@/ui/skeleton/SkeletonLoader';
+import parse from 'html-react-parser';
 
 import { onlyText } from '@/utils/text/clearText';
 
 import styles from './Cards.module.scss';
+import { MdCancel } from '@react-icons/all-files/md/MdCancel';
+import { stringToHTML } from '@/utils/text/stringToHtml';
 
 const Cards: FC = () => {
   const { ref, inView } = useInView();
@@ -68,7 +71,7 @@ const Cards: FC = () => {
                 key={item.id}
                 whileHover={{
                   scale: 1.02,
-                  transition: { duration: 0.3 },
+                  transition: { type: 'just', duration: 0.3  },
                 }}
                 style={{
                   borderRadius: '30px',
@@ -90,7 +93,7 @@ const Cards: FC = () => {
               >
                 <motion.div
                   style={{
-                    borderRadius: '30px',
+                    borderRadius: selectedId === item.id && isModalOpen ? '0px' : '30px',
                   }}
                   layout={'position'}
                   className={styles.imageContainer}
@@ -101,12 +104,13 @@ const Cards: FC = () => {
                     fill
                     className={'image-like-bg'}
                   />
+                  {/*<MdCancel className={'text-5xl text-black absolute'}/>*/}
                   <motion.div className={styles.linkActions}>
                     {item.links.map((item, index) => (
                       <LinkButton
                         key={index}
                         link={item}
-                        className={'text-white hover:border-white'}
+                        className={''}
                       />
                     ))}
                   </motion.div>
@@ -116,13 +120,15 @@ const Cards: FC = () => {
                     {item.title}
                   </motion.h2>
                   <motion.h3 layout={'position'} className={styles.category}>
-                    Категория
+                    {selectedId === item.id && isModalOpen
+                      ? parse(item.category)
+                      : onlyText(item.category, 30)}
                   </motion.h3>
-                  <motion.p layout={'position'} className={styles.description}>
-                    {isModalOpen
-                      ? item.description
+                  <motion.div layout={'position'} className={styles.description}>
+                    {selectedId === item.id && isModalOpen
+                      ? parse(item.description)
                       : onlyText(item.description, 100)}
-                  </motion.p>
+                  </motion.div>
                 </motion.div>
               </motion.div>
             ))}

@@ -17,11 +17,10 @@ const Design: FC = () => {
       <div className={styles.wrapper}>
         <Heading title={'Design'} />
         <Description>
-          Первым делом я, как Frontend разработчик решил приобщиться к делу
+          Первым делом я, как Frontend разработчик, решил приобщиться к делу
           дизайнера, понять как начинаются первые шаги в разработке будущего
-          проекта
+          проекта. Здесь я приобрел навыки работы с Figma, познал верстку и CSS.
         </Description>
-
         <Collection />
       </div>
     </Meta>

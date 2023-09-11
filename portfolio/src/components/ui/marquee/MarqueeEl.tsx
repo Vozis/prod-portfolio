@@ -11,7 +11,7 @@ const MarqueeEl: FC<{ items: IMarquee[] }> = ({ items }) => {
       loop={0}
       gradient
       className={
-        'max-w-6xl max-lg:max-w-5xl max-md:max-w-xl max-sm:max-w-xs mx-auto flex items-center'
+        'max-w-4xl max-lg:max-w-3xl max-md:max-w-xl max-sm:max-w-xs mx-auto flex items-center'
       }
     >
       {items.length &&

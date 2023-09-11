@@ -15,24 +15,19 @@ const Cover: FC = () => {
   const isMobile = useMediaQuery('(max-width:425px)');
   return (
     <div
-      className={'flex flex-col justify-between text-left min-md:mr-20 h-full'}
+      className={'flex flex-col justify-center text-left min-md:mr-20 h-full xl:gap-10 lg:gap-6 gap-4'}
     >
-      <div className={'flex flex-col gap-10'}>
-        <Heading title={'Привет, меня зовут Илья!'} />
+      <div className={'flex flex-col gap-2 xl:gap-5'}>
+        <Heading title={`Привет, меня зовут Илья!`} />
         <SubHeading title={'Full-stack JavaScript developer'} />
       </div>
-      <div className={'about flex flex-col gap-3'}>
-        <MaterialIcon name={'FaCoffee'} className={'text-3xl'} />
-        <SubHeading title={'About me'} />
+      <hr/>
+      <div className={'about flex flex-col gap-4'}>
+        {/*<MaterialIcon name={'FaCoffee'} className={'text-3xl'} />*/}
+        <SubHeading title={'В двух словах,'} />
         <Description>
-          Pariatur laborum incididunt tempor elit do laborum cupidatat cillum
-          minim sit labore in in velit adipisicing. Ullamco incididunt quis
-          laborum elit sunt ipsum sit dolor Lorem esse. Voluptate reprehenderit
-          nostrud dolor ut elit aliquip aliquip Lorem duis voluptate. Aute
-          officia in aliqua fugiat cillum aute consectetur sunt. Occaecat sit
-          anim nisi quis esse minim officia. Magna occaecat pariatur anim irure
-          aliqua commodo excepteur. Ipsum nostrud eu pariatur dolore id in duis
-          ipsum anim eu fugiat eiusmod. Duis nostrud amet culpa.
+          Занимаюсь разработкой web-приложений от макета до готового продукта. За плечами имею знания и опыт в
+          Backend и Frontend разработке на Javascript с уверенным использованием современных фреймворков.
         </Description>
       </div>
     </div>

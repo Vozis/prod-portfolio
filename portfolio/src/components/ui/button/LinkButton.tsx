@@ -21,9 +21,10 @@ const LinkButton: FC<ILinkButton> = ({
   return (
     <Link
       href={link.url}
+      target={'_blank'}
       className={cn(
         className,
-        'bg-none border-transparent inline-flex justify-center items-center gap-2 px-2 my-2 text-black md:border-b max-lg:text-2xl max-sm:text-lg max-md:text-xl transition-all duration-200',
+        'bg-none border-transparent inline-flex justify-center items-center gap-2 px-2 my-2 md:border-b max-lg:text-xl max-sm:text-lg max-md:text-xl transition-all duration-200',
         'hover:border-black hover:border-b',
       )}
     >

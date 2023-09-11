@@ -10,6 +10,7 @@ import { SubHeading } from '@/ui/typography/SubHeading';
 import { IProjectItem } from '@/shared/types/projects.interface';
 
 import styles from './Slider.module.scss';
+import parse from 'html-react-parser';
 
 const SliderItem: FC<{ slide: IProjectItem }> = ({ slide }) => {
   return (
@@ -20,11 +21,11 @@ const SliderItem: FC<{ slide: IProjectItem }> = ({ slide }) => {
           alt={slide.title}
           width={700}
           height={300}
-          className={'mb-10 max-md:mb-6 shadow-xl'}
+          className={'mb-10 max-md:mb-6 shadow-xl rounded-xl'}
         />
         <div className={'flex flex-col gap-3 max-w-[300px] md:ml-10'}>
           <SubHeading title={slide.title} />
-          <Description>{slide.description}</Description>
+          <Description>{parse(slide.shortDescription)}</Description>
         </div>
       </div>
       <div className={'flex gap-10 md:ml-10 max-md: justify-start'}>

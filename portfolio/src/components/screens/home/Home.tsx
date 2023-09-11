@@ -30,7 +30,7 @@ const Home: FC = () => {
     <Meta title={'Home'} description={'Welcome to my portfolio'}>
       <div className={styles.home}>
         <Cover />
-        {/*<DynamicSlider items={projectsData.items.slice(0, 3)} />*/}
+        <DynamicSlider items={projectsData.slice(0, 3)} />
       </div>
     </Meta>
   );

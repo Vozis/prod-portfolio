@@ -10,7 +10,7 @@ const Heading: FC<IHeading> = ({ title, className }) => {
   return (
     <h1
       className={cn(
-        'text-5xl max-lg:text-3xl max-md:text-2xl font-semibold',
+        ' text-2xl xl:text-5xl lg:text-3xl font-semibold',
         className,
       )}
     >

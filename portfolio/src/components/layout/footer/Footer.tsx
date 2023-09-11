@@ -6,7 +6,7 @@ import styles from './Footer.module.scss';
 
 const Footer: FC = () => {
   return (
-    <footer className={'py-3'}>
+    <footer className={'py-3 grid-in-footer'}>
       <div className={styles.content}>
         <p
           className={

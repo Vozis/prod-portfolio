@@ -17,7 +17,8 @@
   height: 100vh;
   min-height: 100vh;
   background-color: black;
-  z-index: 2;
+  z-index: 6;
+  backdrop-filter: blur(90px);
 }
 
 .content {
@@ -27,6 +28,9 @@
 .imageContainer{
   @apply w-60 max-sm:w-40 absolute opacity-50 overflow-hidden;
 
+  img {
+    @apply transition-all duration-300;
+  }
 }
 
 .header {
@@ -34,7 +38,17 @@
 }
 
 .description {
+  @apply flex flex-col gap-4;
 
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  img {
+    @apply rounded-xl
+  }
 }
 
 .category {
@@ -46,8 +60,7 @@
   @apply flex gap-4;
 }
 
-
-
+// Modal close =========================================================================
 
 .card {
   z-index: 3;
@@ -57,7 +70,6 @@
   &:nth-child(1) {
     grid-column: 1 / 3;
 
-
     @media (max-width:425px) {
       grid-column: 1 / 1;
     }
@@ -65,7 +77,6 @@
 
   &:nth-child(5n) {
     grid-column: 1 / 3;
-
 
     @media (max-width:425px) {
       grid-column: 1 / 1;
@@ -108,9 +119,8 @@
     }
   }
 
-
   & .content {
-    @apply flex flex-col gap-3 mr-20 text-white z-1;
+    @apply flex flex-col gap-3 mr-14 text-white z-1 overflow-hidden;
   }
 
   & .imageContainer{
@@ -133,10 +143,9 @@
     @apply text-lg;
 
   }
-
-
 }
 
+// Modal open ============================================================================
 
 .modal {
   position: fixed;
@@ -147,7 +156,7 @@
   cursor: pointer;
   margin: auto;
   overflow: hidden;
-  z-index: 4;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
@@ -157,22 +166,31 @@
   }
 
   & .content {
-    @apply flex flex-col gap-3 text-white p-10 mt-[400px] overflow-y-auto mr-0;
+    @apply flex flex-col gap-3 text-white p-5 overflow-y-auto mr-0;
 
-    @media (max-width: 425px) {
-      @apply mt-[180px];
-    }
+    //@media (max-width: 425px) {
+    //  @apply mt-[180px];
+    //}
   }
 
   & .imageContainer{
-    @apply rounded-none opacity-100 absolute min-h-[400px] w-full;
+    @apply rounded-none opacity-100 relative min-h-[100px] w-full border-b border-black shadow-xl;
 
     @media (max-width:425px) {
-      @apply min-h-[200px]
+      @apply min-h-[50px]
+    }
+
+    img {
+      filter: opacity(0%)
+
     }
 
     & .linkActions {
       @apply absolute z-5 bottom-5 right-5 text-xl;
+
+      @media (max-width:425px) {
+        @apply static flex items-center h-full w-full justify-end px-4;
+      }
 
       a {
         @apply text-black;

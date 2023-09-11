@@ -22,16 +22,22 @@ const About: FC = () => {
       <div className={styles.wrapper}>
         <div className={'grid-auto-fit-lg grid'}>
           <div className={'flex flex-col gap-6 md:mr-48'}>
-            <Heading title={'About me'} />
-            <Description>Здесь представлена краткая информация</Description>
+            <Heading title={'Больше, чем в двух словах'} />
+            <Description>Мне 26 лет. Программирование запало в душу более 10 лет назад, полноценно занимаюсь разработкой около 3 лет. Больше всего люблю нетривиальные задачи, за решением которых
+            Безумно интересно работать в небольшой команде с грандиозными планами :)
+            </Description>
           </div>
 
           <Image
-            src={'/23.jpg'}
-            alt={''}
-            width={500}
-            height={400}
-            className={'block shadow-xl max-sm:hidden'}
+            src={'/images/me.jpg'}
+            alt={'Моя фотография'}
+            width={350}
+            height={100}
+            priority={true}
+            style={{
+              objectFit: 'cover',
+            }}
+            className={'block shadow-xl max-sm:hidden rounded-3xl w-full'}
           />
         </div>
         <div className={styles.content}>
@@ -64,8 +70,13 @@ const About: FC = () => {
                 category={'Дизайн'}
               />
               <InfoItem
-                period={'2022-2023'}
+                period={'2021-2022'}
                 name={'GeekBrains'}
+                category={'Full-stack разработка'}
+              />
+              <InfoItem
+                period={'2023-2023'}
+                name={'В спорте | Стартап'}
                 category={'Full-stack разработка'}
               />
             </InfoBlock>

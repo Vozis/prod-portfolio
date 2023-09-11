@@ -32,6 +32,19 @@ module.exports = {
     //   },
     // },
     extend: {
+      gridTemplateAreas: {
+        'layout': [
+          'header',
+          'main',
+          'footer',
+        ],
+      },
+      gridTemplateColumns: {
+        'layout': '1fr',
+      },
+      gridTemplateRows: {
+        'layout': 'auto 1fr auto',
+      },
       spacing: {
         0.5: '0.125rem',
         layout: '2.75rem',
@@ -90,6 +103,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@savvywombat/tailwindcss-grid-areas'),
     require('@shrutibalasa/tailwind-grid-auto-fit'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),

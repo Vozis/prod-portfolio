@@ -5,6 +5,7 @@ import { useLockedBody, useOnClickOutside } from 'usehooks-ts';
 
 import Menu from '@/layout/Navigation/header-menu/Menu';
 import {
+  headerMenu,
   headerMenuLeft,
   headerMenuRight,
 } from '@/layout/Navigation/header-menu/menu.data';
@@ -34,7 +35,7 @@ const Navigation: FC = () => {
   // });
 
   return (
-    <header className={cn(styles.navigation)}>
+    <header className={cn(styles.navigation, 'grid-in-header')}>
       {isMobile && (
         <BurgerMenu
           className={'absolute top-0.5 right-0.5 z-20'}
@@ -57,16 +58,20 @@ const Navigation: FC = () => {
           })}
           ref={navRef}
         >
-          <Menu
-            clickHandler={() => setIsMenuOpen(false)}
-            menu={headerMenuLeft}
-          />
+          {/*<Menu*/}
+          {/*  clickHandler={() => setIsMenuOpen(false)}*/}
+          {/*  menu={headerMenuLeft}*/}
+          {/*/>*/}
           <Link href={'/'} className={styles.logo}>
             IlyaSizov
           </Link>
+          {/*<Menu*/}
+          {/*  clickHandler={() => setIsMenuOpen(false)}*/}
+          {/*  menu={headerMenuRight}*/}
+          {/*/>*/}
           <Menu
             clickHandler={() => setIsMenuOpen(false)}
-            menu={headerMenuRight}
+            menu={headerMenu}
           />
           {isMobile && (
             <div className={styles.socials}>

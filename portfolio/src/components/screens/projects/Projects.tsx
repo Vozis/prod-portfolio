@@ -1,10 +1,6 @@
 import { FC } from 'react';
 
 import Cards from '@/ui/cards/Cards';
-import Collection from '@/ui/collection/Collection';
-import Framer from '@/ui/framer/Framer';
-import Test from '@/ui/framer/Test';
-import { LayoutCards } from '@/ui/framer/Test2';
 import MarqueeEl from '@/ui/marquee/MarqueeEl';
 import { marqueeData } from '@/ui/marquee/marquee.data';
 import Description from '@/ui/typography/Description';
@@ -28,10 +24,6 @@ const Projects: FC = () => {
         </Description>
         <MarqueeEl items={marqueeData} />
         <Cards />
-        {/*<Collection />*/}
-        {/*<Framer />*/}
-        {/*<Test />*/}
-        {/*<LayoutCards />*/}
       </div>
     </Meta>
   );

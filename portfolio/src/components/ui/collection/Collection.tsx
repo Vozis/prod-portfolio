@@ -38,7 +38,7 @@ const Collection: FC = () => {
               {page.data.items.map(item => (
                 <Suspense
                   key={item.id}
-                  fallback={<SkeletonLoader className={'h-48 rounded-3xl'} />}
+                  fallback={<SkeletonLoader className={'h-48'} borderRadius={20} />}
                 >
                   <LazyItem item={item} />
                 </Suspense>

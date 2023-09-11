@@ -31,3 +31,30 @@ export const headerMenuRight: IMenu = {
     },
   ],
 };
+
+
+export const headerMenu: IMenu = {
+  title: 'Header-menu',
+  items: [
+    {
+      title: 'Design',
+      icon: 'FaHome',
+      link: '/design',
+    },
+    {
+      title: 'Web',
+      icon: 'FaWeibo',
+      link: '/projects',
+    },
+    {
+      title: 'Обо мне',
+      icon: 'FaInfo',
+      link: '/about',
+    },
+    {
+      title: 'Контакты',
+      icon: 'FaContao',
+      link: '/contacts',
+    },
+  ],
+}

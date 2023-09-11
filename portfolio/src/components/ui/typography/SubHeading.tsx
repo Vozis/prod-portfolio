@@ -10,7 +10,7 @@ export const SubHeading: FC<SubHeading> = ({ className, title }) => {
   return (
     <div
       className={cn(
-        'text-4xl max-lg:text-2xl max-md:text-xl font-medium',
+        'text-xl xl:text-4xl lg:text-2xl font-medium',
         className,
       )}
     >

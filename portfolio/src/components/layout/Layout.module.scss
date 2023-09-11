@@ -5,9 +5,10 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   grid-template-areas:
-'header'
-'main'
-'footer';
+  'header'
+  'main'
+  'footer';
+  justify-items: stretch;
 }
 
 .layout > header {
@@ -17,6 +18,10 @@
 .layout > main {
   grid-area: main;
   max-width: 1200px;
+
+  @media (min-width: 1200px) {
+  width: 1200px;
+  }
 }
 
 .layout > footer {
