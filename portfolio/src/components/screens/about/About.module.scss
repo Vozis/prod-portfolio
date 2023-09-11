@@ -1,0 +1,33 @@
+.wrapper {
+  @apply flex flex-col gap-14 max-md:gap-6;
+}
+
+.content {
+  @apply grid grid-cols-2 justify-start;
+
+  @media screen and (max-width:768px) {
+    @apply grid-cols-1;
+  }
+
+  > div:nth-child(2) {
+    border-top: 1px solid black;
+
+    @media screen and (max-width:768px) {
+    margin-top: 20px;
+    padding-top: 10px;
+    }
+
+    @media (min-width: 768.2px) {
+      border-left: 1px solid black;
+      border-top: none;
+    }
+  }
+}
+
+.item {
+@apply flex flex-col gap-6;
+
+  > h3 {
+    @apply text-3xl text-center;
+  }
+}
