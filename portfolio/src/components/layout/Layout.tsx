@@ -13,7 +13,7 @@ const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
     // <div className={'grid-areas-layout min-h-full h-full justify-stretch'}>
     <div className={styles.layout}>
       <Navigation />
-      <main className={'grid-in-main mx-auto pt-24 max-md:pt-16 animate-fade px-layout max-md:px-5 max-sm:px-4 max-w-[1200px]'}>
+      <main className={'grid-in-main mx-auto pt-24 max-md:pt-16 animate-fade max-w-[1200px]'}>
         {children}
       </main>
       {/*<TransitionProvider className={'grid-in-main mx-auto pt-24 max-md:pt-16 animate-fade px-layout max-md:px-5 max-sm:px-4 max-w-[1200px]'}>*/}

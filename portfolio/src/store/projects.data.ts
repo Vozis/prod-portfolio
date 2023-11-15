@@ -64,7 +64,7 @@ export const projectsData: IProjectItem[] = [
         icon: 'FaGithubAlt',
       },
       {
-        url: 'https://github.com/',
+        url: 'http://final-project.ilyasizov.webtm.ru',
         name: 'Deploy',
         icon: 'FaSafari',
       },
@@ -72,35 +72,55 @@ export const projectsData: IProjectItem[] = [
   },
   {
     id: 2,
-    title: 'Amazon',
-    category: 'Full-stack | NestJS, NextJS, React-query, Redux Toolkit, Axios, React-select, Tailwind, SCSS, TypeScript',
+    title: 'Online-cinema',
+    category: 'Full-stack',
     shortDescription: `
     <p>
-      Реализация копии интернет-магазина Amazon. FullStack-разработка.
-    </p>
+      Сервис для поиска и просмотра любимых фильмов и сериалов. FullStack 
+      разработка с реализацией всех функций для полноценного 
+      использования как пользователя, так и администратора.
+</p>
     `,
     description:
-      `<p>
-        В проекте реализован основной функционал интернет-магазина в
-        тренировочном формате, включая реализации поиска, сортировки и корзины 
-        с добавлением и оплатой товара. 
+      `
+      <p>
+      Сервис представляет собой портал для просмотра фильмов и сериалов online.
+       
+      Интерфейс разделен на 3 раздела: меню, основной контент и sidebar для 
+      подручной пользователю информации.
       </p>
-      <Image src='/images/projects/amazon/amazon.jpg'/>
+      <Image src='/images/projects/cinema/cinema-fresh.jpg'/>
+      <p>
+      При разработке была учтена работа с сервисом в режиме Администрирования.
+      В данном разделе содержится статистика сервиса и функционал по добавлению 
+      нового контента и редактированию существующего. 
+      </p>
+      <Image src='/images/projects/cinema/cinema-admin.jpg'/>
+      <Image src='/images/projects/cinema/cinema-update-form.jpg'/>
+      <p>
+      Реализован функционал WYSIWYG редактора.
+      </p>
+      <Image src='/images/projects/cinema/cinema-wysiwyg.jpg'/>
+      
+      Разработаны версии для различных устройств с адаптацией интерфейса для 
+      всех разрешений.
+      <Image src='/images/projects/cinema/cinema-discovery-mobile.jpg'/>
       <p>
         Backend часть выполнена на фреймворке Nest JS c созданием базы данных 
         в PostgreSQL. Разработана таблица с организацией связи между сущностями. 
       </p>
-      <Image src='/images/projects/amazon/amazon-table.jpg'/>
-      `,
-    imageUrl: '/images/projects/amazon/amazon.jpg',
+      <Image src='/images/projects/cinema/cinema-table.jpg'/>
+     `
+    ,
+    imageUrl: '/images/projects/cinema/cinema.jpg',
     links: [
       {
-        url: 'https://github.com/Vozis/gb-final-project',
+        url: 'https://github.com/Vozis/portfolio-cinema',
         name: 'Github',
         icon: 'FaGithubAlt',
       },
       {
-        url: 'https://github.com/',
+        url: 'http://cinema.ilyasizov.webtm.ru',
         name: 'Deploy',
         icon: 'FaSafari',
       },
@@ -147,50 +167,73 @@ export const projectsData: IProjectItem[] = [
   },
   {
     id: 4,
-    title: 'Online-cinema',
-    category: 'Full-stack',
+    title: 'Telegram Bot помощник',
+    category: 'Backend | NestJS, Express, Prisma, Postgres, Telegraf, Google Tables',
     shortDescription: `
     <p>
-      Сервис для поиска и просмотра любимых фильмов и сериалов. FullStack 
-      разработка с реализацией всех функций для полноценного 
-      использования как пользователя, так и администратора.
-</p>
+      Бот - помощник для работы в группах учеников. Предоставление расписания, уведомления о будущих занятиях,
+      ежедневные задания для участников.
+    </p>
     `,
     description:
       `
       <p>
-      Сервис представляет собой портал для просмотра фильмов и сериалов online.
-       
-      Интерфейс разделен на 3 раздела: меню, основной контент и sidebar для 
-      подручной пользователю информации.
+      Бот - помощник для работы в группах учеников. Предоставление расписания, уведомления о будущих занятиях,
+      ежедневные задания для участников. Реализованы функции администратора для 
+      управления расписанием занятий, ведение статистики. Интеграция с Google таблицами
+      для комфортного редактирования данных преподавателями.
       </p>
-      <Image src='/images/projects/cinema/cinema-fresh.jpg'/>
+      <Image src='/images/projects/portfolio/portfolio-main.jpg'/>
+      <Image src='/images/projects/portfolio/portfolio-design.jpg'/>
       <p>
-      При разработке была учтена работа с сервисом в режиме Администрирования.
-      В данном разделе содержится статистика сервиса и функционал по добавлению 
-      нового контента и редактированию существующего. 
+      Реализация моего портфолио для всемирного доступа. 
       </p>
-      <Image src='/images/projects/cinema/cinema-admin.jpg'/>
-      <Image src='/images/projects/cinema/cinema-update-form.jpg'/>
+      <Image src='/images/projects/portfolio/portfolio-projects.jpg'/>
+      <Image src='/images/projects/portfolio/portfolio-about.jpg'/>
       <p>
-      Реализован функционал WYSIWYG редактора.
+      Реализация моего портфолио для всемирного доступа. 
       </p>
-      <Image src='/images/projects/cinema/cinema-wysiwyg.jpg'/>
-      
-      Разработаны версии для различных устройств с адаптацией интерфейса для 
-      всех разрешений.
-      <Image src='/images/projects/cinema/cinema-discovery-mobile.jpg'/>
+      `,
+    imageUrl: '/images/projects/portfolio/portfolio-main.jpg',
+    links: [
+      {
+        url: 'https://github.com/Vozis/telegram-bot',
+        name: 'Github',
+        icon: 'FaGithubAlt',
+      },
+      {
+        url: 'https://t.me/YamaSchoolBot',
+        name: 'Telegram',
+        icon: 'FaTelegram',
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: 'Amazon',
+    category: 'Full-stack | NestJS, NextJS, React-query, Redux Toolkit, Axios, React-select, Tailwind, SCSS, TypeScript',
+    shortDescription: `
+    <p>
+      Реализация копии интернет-магазина Amazon. FullStack-разработка.
+    </p>
+    `,
+    description:
+      `<p>
+        В проекте реализован основной функционал интернет-магазина в
+        тренировочном формате, включая реализации поиска, сортировки и корзины 
+        с добавлением и оплатой товара. 
+      </p>
+      <Image src='/images/projects/amazon/amazon.jpg'/>
       <p>
         Backend часть выполнена на фреймворке Nest JS c созданием базы данных 
         в PostgreSQL. Разработана таблица с организацией связи между сущностями. 
       </p>
-      <Image src='/images/projects/cinema/cinema-table.jpg'/>
-     `
-    ,
-    imageUrl: '/images/projects/cinema/cinema.jpg',
+      <Image src='/images/projects/amazon/amazon-table.jpg'/>
+      `,
+    imageUrl: '/images/projects/amazon/amazon.jpg',
     links: [
       {
-        url: 'https://github.com/Vozis/red-cinema',
+        url: 'https://github.com/Vozis/gb-final-project',
         name: 'Github',
         icon: 'FaGithubAlt',
       },
@@ -200,5 +243,5 @@ export const projectsData: IProjectItem[] = [
         icon: 'FaSafari',
       },
     ],
-  }
+  },
 ];

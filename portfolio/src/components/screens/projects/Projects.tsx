@@ -20,7 +20,7 @@ const Projects: FC = () => {
         <Description>
           Имею опыт работы как с Frontend, так и c Backend разработкой. Стек
           используемых технологий представлен современными средствами
-          разработки.
+          разработки. Имею опыт работы с контейнеризацией приложений с помощью Docker, Nginx.
         </Description>
         <MarqueeEl items={marqueeData} />
         <Cards />

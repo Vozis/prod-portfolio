@@ -1,7 +1,19 @@
+.sliderContainer {
+  //@apply pl-layout max-md:pl-5 max-sm:pl-4;
+
+  @media (min-width:768.2px) {
+    @apply px-layout max-md:px-5 max-sm:px-4;
+  }
+}
+
+
 .slider {
   width: 100%;
  @apply relative;
 
+  @media (min-width:768.2px) {
+    @apply px-layout max-md:px-5 max-sm:px-4;
+  }
 }
 
 
@@ -14,5 +26,5 @@
 }
 
 .navigation {
-  @apply absolute top-96 z-3 right-3 flex flex-col gap-5;
+  @apply absolute top-96 z-3 right-3 flex flex-col gap-5 px-layout max-md:px-5 max-sm:px-4;
 }

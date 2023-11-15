@@ -21,7 +21,7 @@ const About: FC = () => {
     <Meta title={'About'} description={'About me'}>
       <div className={styles.wrapper}>
         <div className={'grid-auto-fit-lg grid'}>
-          <div className={'flex flex-col gap-6 md:mr-48'}>
+          <div className={'flex flex-col gap-6 md:mr-24'}>
             <Heading title={'Больше, чем в двух словах'} />
             <Description>Мне 26 лет. Программирование запало в душу более 10 лет назад, полноценно занимаюсь разработкой около 3 лет. Больше всего люблю нетривиальные задачи, за решением которых
             Безумно интересно работать в небольшой команде с грандиозными планами :)

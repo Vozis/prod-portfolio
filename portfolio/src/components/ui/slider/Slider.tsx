@@ -13,6 +13,7 @@ import { useSlider } from '@/ui/slider/useSlider';
 import { IProjectItem, IProjectItems } from '@/shared/types/projects.interface';
 
 import styles from './Slider.module.scss';
+import cn from 'clsx';
 
 const Slider: FC<{ items: IProjectItem[] }> = ({ items }) => {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -36,11 +37,12 @@ const Slider: FC<{ items: IProjectItem[] }> = ({ items }) => {
     <>
       <Swiper
         ref={ref}
-        className={styles.slider}
+        className={cn(styles.slider)}
         centeredSlides
-        centeredSlidesBounds
+        // centeredSlidesBounds
+        initialSlide={1}
         spaceBetween={isMobile ? 20 : 50}
-        slidesPerView={isMobile ? 1.2 : 1}
+        slidesPerView={isMobile ? 1.3 : 1}
         direction={isMobile ? 'horizontal' : 'vertical'}
         modules={[Virtual]}
         virtual
@@ -51,7 +53,7 @@ const Slider: FC<{ items: IProjectItem[] }> = ({ items }) => {
         {items.map(item => (
           <SwiperSlide
             key={item.id}
-            className={styles.slide}
+            // className={cn({['mr-layout max-md:mr-5 max-sm:mr-4']: item.id === items.length})}
             virtualIndex={item.id}
           >
             <SliderItem slide={item} />
