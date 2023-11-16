@@ -9,7 +9,7 @@ export const headerMenuLeft: IMenu = {
       link: '/design',
     },
     {
-      title: 'Web',
+      title: 'Projects',
       icon: 'FaWeibo',
       link: '/projects',
     },
@@ -42,7 +42,7 @@ export const headerMenu: IMenu = {
       link: '/design',
     },
     {
-      title: 'Web',
+      title: 'Projects',
       icon: 'FaWeibo',
       link: '/projects',
     },

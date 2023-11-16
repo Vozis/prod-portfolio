@@ -47,11 +47,25 @@ const Contacts: FC = () => {
           </div>
           <div className={styles.item}>
             <MaterialIcon name={'FaGithub'} />
-            <Link href={'https://github.com/'}>Github</Link>
+            <Link href={'https://github.com/Vozis'}>Github</Link>
           </div>
-          <div className={styles.item}>
-            <MaterialIcon name={'FaHeading'} />
-            <Link href={'https://hh.com/'}>Github</Link>
+          <div className={styles.item} style={{
+            fontSize: '1.5rem',
+            paddingLeft: '1.5rem',
+            paddingRight: '1.5rem',
+          }}>
+            <Link href={'https://wa.me/79994643719'}>
+              <MaterialIcon name={'FaWhatsapp'} />
+            </Link>
+          </div>
+          <div className={styles.item} style={{
+            fontSize: '1.5rem',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
+          }}>
+            <Link href={'https://tlgg.ru/IlyaaSizov'}>
+              <MaterialIcon name={'FaTelegram'} />
+            </Link>
           </div>
         </div>
       </div>

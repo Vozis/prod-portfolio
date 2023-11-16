@@ -15,7 +15,7 @@ const Cover: FC = () => {
   const isMobile = useMediaQuery('(max-width:425px)');
   return (
     <div
-      className={'flex flex-col justify-center text-left min-md:mr-20 h-full xl:gap-10 lg:gap-6 gap-4'}
+      className={'flex flex-col justify-center text-left min-md:mr-20 h-full xl:gap-10 lg:gap-6 gap-4 px-layout max-md:px-5 max-sm:px-4'}
     >
       <div className={'flex flex-col gap-2 xl:gap-5'}>
         <Heading title={`Привет, меня зовут Илья!`} />
@@ -27,7 +27,8 @@ const Cover: FC = () => {
         <SubHeading title={'В двух словах,'} />
         <Description>
           Занимаюсь разработкой web-приложений от макета до готового продукта. За плечами имею знания и опыт в
-          Backend и Frontend разработке на Javascript с уверенным использованием современных фреймворков.
+          <b> Backend</b> и <b> Frontend</b> разработке на Javascript с уверенным использованием современных фреймворков. Кроме того,
+          занимаюсь разработкой <b> Telegram ботов</b>!
         </Description>
       </div>
     </div>

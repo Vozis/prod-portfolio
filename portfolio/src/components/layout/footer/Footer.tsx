@@ -21,8 +21,11 @@ const Footer: FC = () => {
           <a href={'mailto:sizov.ilya1996@gmail.com'}>
             <MaterialIcon name={'FaGoogle'} />
           </a>
-          <a href={'mailto:sizov.ilya1996@gmail.com'}>
+          <a href={'https://wa.me/79994643719'}>
             <MaterialIcon name={'FaWhatsapp'} />
+          </a>
+          <a href={'https://tlgg.ru/IlyaaSizov'}>
+            <MaterialIcon name={'FaTelegram'} />
           </a>
         </div>
       </div>
