@@ -178,23 +178,33 @@ export const projectsData: IProjectItem[] = [
     description:
       `
       <p>
-      Бот - помощник для работы в группах учеников. Предоставление расписания, уведомления о будущих занятиях,
-      ежедневные задания для участников. Реализованы функции администратора для 
-      управления расписанием занятий, ведение статистики. Интеграция с Google таблицами
-      для комфортного редактирования данных преподавателями.
+      Бот - помощник для работы в группах учеников. Позволяет работать с ним как ученикам, так и преподавателям и 
+      администраторам групп. Корневой функционал заключен в создании автоматизации по отправке уведомлений о предстоящих
+      уроках в соответствии с действующим расписанием.
       </p>
-      <Image src='/images/projects/portfolio/portfolio-main.jpg'/>
-      <Image src='/images/projects/portfolio/portfolio-design.jpg'/>
+      <Image src='/images/projects/telegram-bot/bot-start-page.jpg'/>
+      <Image src='/images/projects/telegram-bot/bot-hello.jpg'/>
       <p>
-      Реализация моего портфолио для всемирного доступа. 
+      При создании бота по возможности использовались все доступные функции Telegram API.  
+      Созданы несколько поэтапных сцен для создания, изменения и удаления действующих уроков, изменения расписания учеников. 
       </p>
-      <Image src='/images/projects/portfolio/portfolio-projects.jpg'/>
-      <Image src='/images/projects/portfolio/portfolio-about.jpg'/>
+      <Image src='/images/projects/telegram-bot/bot-create-cron.jpg'/>
+      <Image src='/images/projects/telegram-bot/bot-create-cron2.jpg'/>
+      <Image src='/images/projects/telegram-bot/bot-create-cron3.jpg'/>
       <p>
-      Реализация моего портфолио для всемирного доступа. 
+      Предоставление расписания также отличается для участников с разным статусом: так администратор в праве просматривать расписание 
+      любых групп, тогда как участник ограничен своей группой.
       </p>
+      <Image src='/images/projects/telegram-bot/bot-show-schedule.jpg'/>
+      <p>
+      С ростом функционала появилась необходимость добавления ежедневных задачек для студентов, как в виде текстовых закрепленных
+      сообщений, так и в виде опросов с сохранением результатов тестирования. Здесь понадобился простой и понятный преподавателю 
+      способ получения информации посредством Google таблиц.  
+      </p>
+      <Image src='/images/projects/telegram-bot/bot-google-table.jpg'/>
+      <Image src='/images/projects/telegram-bot/bot-table.jpg'/>
       `,
-    imageUrl: '/images/projects/portfolio/portfolio-main.jpg',
+    imageUrl: '/images/projects/telegram-bot/bot-start-page.jpg',
     links: [
       {
         url: 'https://github.com/Vozis/telegram-bot',
