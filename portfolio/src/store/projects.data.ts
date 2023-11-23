@@ -138,18 +138,16 @@ export const projectsData: IProjectItem[] = [
     description:
       `
       <p>
-      Реализация моего портфолио для всемирного доступа. 
+      Реализация моего портфолио для всемирного доступа. Здесь вы найдете информацию о моих проектах, опыте работе и обо
+      мне.
       </p>
       <Image src='/images/projects/portfolio/portfolio-main.jpg'/>
       <Image src='/images/projects/portfolio/portfolio-design.jpg'/>
       <p>
-      Реализация моего портфолио для всемирного доступа. 
+      Реализованы несколько страниц, разделенных по тематике.
       </p>
       <Image src='/images/projects/portfolio/portfolio-projects.jpg'/>
       <Image src='/images/projects/portfolio/portfolio-about.jpg'/>
-      <p>
-      Реализация моего портфолио для всемирного доступа. 
-      </p>
       `,
     imageUrl: '/images/projects/portfolio/portfolio-main.jpg',
     links: [
