@@ -9,7 +9,7 @@ const SkeletonLoader: FC<SkeletonProps> = ({ className, ...rest }) => {
       {...rest}
       baseColor={'#8E8E8E'}
       highlightColor={'#B5B5B5'}
-      className={cn(className)}
+      className={cn('', className)}
     />
   );
 };

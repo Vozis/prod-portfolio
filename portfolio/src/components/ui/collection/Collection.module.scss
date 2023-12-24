@@ -3,5 +3,12 @@
   justify-items: stretch;
   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
   @apply grid gap-10 transition-all duration-300;
-  //grid-template-rows: repeat(auto-fit, 200px);
+}
+
+.skeletonCard {
+  @apply h-96 self-stretch rounded-3xl;
+
+  @media (any-hover: hover) {
+    @apply h-48;
+  }
 }

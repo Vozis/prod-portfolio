@@ -4,15 +4,15 @@ export const projectsData: IProjectItem[] = [
   {
     id: 1,
     title: 'В Спорте',
-    category: 'Full-stack | SCRUM-разработка | React, NestJS, PrismaORM, NxDev, SocketIO, Redux Toolkit, Axios, Nodemailer, React-hook-form, TypeScript',
+    category:
+      'Full-stack | SCRUM-разработка | React, NestJS, PrismaORM, NxDev, SocketIO, Redux Toolkit, Axios, Nodemailer, React-hook-form, TypeScript',
     shortDescription: `
     <p>
     Сервис, целью которого является помощь в поиске единомышленников для занятия спортом любых видов, улучшение 
     социальной активности, поиска друзей и знакомых.
 </p>
     `,
-    description:
-      `
+    description: `
       <p>
       Сервис, целью которого является помощь в поиске единомышленников для занятия спортом любых видов, улучшение 
       социальной активности, поиска друзей и знакомых. В основе сервиса заложена возможность создания собственных событий 
@@ -54,8 +54,7 @@ export const projectsData: IProjectItem[] = [
         в PostgreSQL. Разработана таблица с организацией связи между сущностями. 
       </p>
       <Image src='/images/projects/sport/sport-table-2.jpg'/>
-     `
-    ,
+     `,
     imageUrl: '/images/projects/sport/sport-main.jpg',
     links: [
       {
@@ -81,8 +80,7 @@ export const projectsData: IProjectItem[] = [
       использования как пользователя, так и администратора.
 </p>
     `,
-    description:
-      `
+    description: `
       <p>
       Сервис представляет собой портал для просмотра фильмов и сериалов online.
        
@@ -101,17 +99,17 @@ export const projectsData: IProjectItem[] = [
       Реализован функционал WYSIWYG редактора.
       </p>
       <Image src='/images/projects/cinema/cinema-wysiwyg.jpg'/>
-      
+      <p>
       Разработаны версии для различных устройств с адаптацией интерфейса для 
       всех разрешений.
+      </p>
       <Image src='/images/projects/cinema/cinema-discovery-mobile.jpg'/>
       <p>
         Backend часть выполнена на фреймворке Nest JS c созданием базы данных 
         в PostgreSQL. Разработана таблица с организацией связи между сущностями. 
       </p>
       <Image src='/images/projects/cinema/cinema-table.jpg'/>
-     `
-    ,
+     `,
     imageUrl: '/images/projects/cinema/cinema.jpg',
     links: [
       {
@@ -135,8 +133,7 @@ export const projectsData: IProjectItem[] = [
       Реализация моего портфолио для всемирного доступа.
     </p>
     `,
-    description:
-      `
+    description: `
       <p>
       Реализация моего портфолио для всемирного доступа. Здесь вы найдете информацию о моих проектах, опыте работе и обо
       мне.
@@ -166,16 +163,17 @@ export const projectsData: IProjectItem[] = [
   {
     id: 4,
     title: 'Telegram Bot помощник',
-    category: 'Backend | NestJS, Express, Prisma, Postgres, Telegraf, Google Tables',
+    category: 'Full-stack | NextJS, Prisma, Postgres, React-hook-form',
     shortDescription: `
     <p>
-      Бот - помощник для работы в группах учеников. Предоставление расписания, уведомления о будущих занятиях,
-      ежедневные задания для участников.
+      Бот - помощник для работы в группах учеников. Позволяет работать с ним как ученикам, так и преподавателям и 
+      администраторам групп. Корневой функционал заключен в создании автоматизации по отправке уведомлений о предстоящих
+      уроках в соответствии с действующим расписанием.
     </p>
     `,
-    description:
-      `
+    description: `
       <p>
+      
       Бот - помощник для работы в группах учеников. Позволяет работать с ним как ученикам, так и преподавателям и 
       администраторам групп. Корневой функционал заключен в создании автоматизации по отправке уведомлений о предстоящих
       уроках в соответствии с действующим расписанием.
@@ -218,15 +216,59 @@ export const projectsData: IProjectItem[] = [
   },
   {
     id: 5,
+    title: 'Wedding',
+    category:
+      'Frontend | NestJS, NextJS, React-query, Redux Toolkit, Axios, React-select, Tailwind, SCSS, TypeScript',
+    shortDescription: `
+    <p>
+      Сайт-приглашение для будущего торжества с формой отправки данных гостями.
+    </p>
+    `,
+    description: `<p>
+        Сайт-приглашение для будущего торжества. Реализован полностью при помощи функционала NextJS, включая серверную часть
+      приложения. Frontend-часть реализована в виде одностраничного лендинга с закрепленным меню, для перемещения между 
+      разделами. Backend-часть реализована с использованием Postgres для сбора данных гостей (для подтверждения участия и 
+      информации о вкусовых предпочтениях, форма реализована с применением библиотеки React-hook-form. Сделана
+      легкая анимация с применением библиотеки Framer-motion. Кроме того, сделан кастомный плеер для тематического музыкального 
+      сопровождения присутствия на сайте.
+      </p>
+      <Image src='/images/projects/wedding/wedding-main.jpg'/>
+      <Image src='/images/projects/wedding/wedding-invite.jpg'/>
+      <Image src='/images/projects/wedding/wedding-location.jpg'/>
+      <Image src='/images/projects/wedding/wedding-form.jpg'/>
+      <p>
+      Разработаны версии для различных устройств с адаптацией интерфейса для 
+      всех разрешений.
+      </p>
+      <Image src='/images/projects/wedding/wedding-main-mobile.jpg'/>
+      <Image src='/images/projects/wedding/wedding-schedule-mobile.jpg'/>
+      <Image src='/images/projects/wedding/wedding-menu-mobile.jpg'/>
+      `,
+    imageUrl: '/images/projects/wedding/wedding-main.jpg',
+    links: [
+      {
+        url: 'https://github.com/Vozis/project-wedding',
+        name: 'Github',
+        icon: 'FaGithubAlt',
+      },
+      {
+        url: 'https://project-wedding-gules.vercel.app/',
+        name: 'Deploy',
+        icon: 'FaSafari',
+      },
+    ],
+  },
+  {
+    id: 6,
     title: 'Amazon',
-    category: 'Full-stack | NestJS, NextJS, React-query, Redux Toolkit, Axios, React-select, Tailwind, SCSS, TypeScript',
+    category:
+      'Full-stack | NestJS, NextJS, React-query, Redux Toolkit, Axios, React-select, Tailwind, SCSS, TypeScript',
     shortDescription: `
     <p>
       Реализация копии интернет-магазина Amazon. FullStack-разработка.
     </p>
     `,
-    description:
-      `<p>
+    description: `<p>
         В проекте реализован основной функционал интернет-магазина в
         тренировочном формате, включая реализации поиска, сортировки и корзины 
         с добавлением и оплатой товара. 

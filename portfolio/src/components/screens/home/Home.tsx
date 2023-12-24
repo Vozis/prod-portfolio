@@ -1,15 +1,7 @@
 import dynamic from 'next/dynamic';
 import { FC } from 'react';
 
-import MaterialIcon from '@/ui/MaterialIcon';
 import Cover from '@/ui/cover/Cover';
-import Gallery from '@/ui/gallery/Gallery';
-import Slider from '@/ui/slider/Slider';
-import { slidesData } from '@/ui/slider/slides.data';
-import Heading from '@/ui/typography/Heading';
-import { SubHeading } from '@/ui/typography/SubHeading';
-
-import { IProjectItems } from '@/shared/types/projects.interface';
 
 import { projectsData } from '@/store/projects.data';
 

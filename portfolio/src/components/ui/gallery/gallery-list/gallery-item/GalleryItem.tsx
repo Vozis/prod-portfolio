@@ -1,12 +1,8 @@
-import cn from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
-import MaterialIcon from '@/ui/MaterialIcon';
 import Badge from '@/ui/badge/Badge';
-import Button from '@/ui/button/Button';
-import LinkButton from '@/ui/button/LinkButton';
 import { SubHeading } from '@/ui/typography/SubHeading';
 
 import image from '@/assets/images/23.jpg';

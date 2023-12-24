@@ -6,7 +6,6 @@ import { ToastContainer } from 'react-toastify';
 import Layout from '@/layout/Layout';
 
 import HeadProvider from '@/providers/head-provider/HeadProvider';
-import TransitionProvider from '@/providers/transition/TransitionProvider';
 
 const queryClient = new QueryClient({
   defaultOptions: {

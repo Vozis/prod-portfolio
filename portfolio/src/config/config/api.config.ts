@@ -23,9 +23,8 @@ export const AxiosClassic = axios.create({
   baseURL: API_URL,
   headers: {
     'Content-Type': 'application/json',
-
   },
 });
 
 export const getDesignApi = (string: string) => `/design${string}`;
-export const getProjectsApi = (string: string) => `/projects${string}`;
+export const getProjectsApi = () => `/projects`;

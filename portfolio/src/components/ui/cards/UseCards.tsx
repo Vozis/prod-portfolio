@@ -1,29 +1,18 @@
-import { useInfiniteQuery } from 'react-query';
+import { useQuery } from 'react-query';
 
 import { ProjectService } from '@/services/project.service';
 
 export const useCards = () => {
-  const {
-    data: projects,
-    fetchNextPage,
-    isLoading,
-    isFetchingNextPage,
-    hasNextPage,
-    isFetching,
-  } = useInfiniteQuery(
-    ['get-project-items'],
-    ({ pageParam = 1 }) => ProjectService.getAll(pageParam),
+  const { data: projects, isLoading } = useQuery(
+    ['get-project-data-items'],
+    () => ProjectService.getAll(),
     {
-      getNextPageParam: lastPage => lastPage.data.nextPage ?? undefined,
+      select: ({ data }) => data,
     },
   );
 
   return {
     projects,
-    fetchNextPage,
     isLoading,
-    isFetchingNextPage,
-    hasNextPage,
-    isFetching,
   };
 };

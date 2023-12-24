@@ -1,15 +1,11 @@
-import React, { FC, Suspense, useEffect, useState } from 'react';
+import React, { FC, Suspense } from 'react';
 
-import Button from '@/ui/button/Button';
-import CollectionItem from '@/ui/collection/collection-item/CollectionItem';
 import { useCollection } from '@/ui/collection/useCollection';
 import SkeletonLoader from '@/ui/skeleton/SkeletonLoader';
 
-import { IDesignItems } from '@/shared/types/design-item.types';
-
 import styles from './Collection.module.scss';
 
-const LazyItem = React.lazy(
+const DynamicCollectionItem = React.lazy(
   () => import('@/ui/collection/collection-item/CollectionItem'),
 );
 
@@ -28,9 +24,9 @@ const Collection: FC = () => {
       <div className={styles.collection}>
         {isLoading ? (
           <>
-            <SkeletonLoader className={'h-48 self-stretch'} />
-            <SkeletonLoader className={'h-48 self-stretch'} />
-            <SkeletonLoader className={'h-48 self-stretch'} />
+            <SkeletonLoader className={styles.skeletonCard} />
+            <SkeletonLoader className={styles.skeletonCard} />
+            <SkeletonLoader className={styles.skeletonCard} />
           </>
         ) : (
           items?.pages.map(page => (
@@ -38,9 +34,9 @@ const Collection: FC = () => {
               {page.data.items.map(item => (
                 <Suspense
                   key={item.id}
-                  fallback={<SkeletonLoader className={'h-48'} borderRadius={20} />}
+                  fallback={<SkeletonLoader className={styles.skeletonCard} />}
                 >
-                  <LazyItem item={item} />
+                  <DynamicCollectionItem item={item} />
                 </Suspense>
               ))}
             </React.Fragment>

@@ -5,10 +5,6 @@ import { FC } from 'react';
 
 import { IMenuItem } from '@/layout/Navigation/header-menu/menu-item/menu-item.interface';
 
-import MaterialIcon from '@/ui/MaterialIcon';
-
-import { useMediaQuery } from '@/hooks/useMediaQueries';
-
 import styles from '../../Navigation.module.scss';
 
 const MenuItem: FC<{ item: IMenuItem; clickHandler: () => void }> = ({

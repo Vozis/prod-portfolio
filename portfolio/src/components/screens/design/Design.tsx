@@ -1,11 +1,8 @@
-import { FC, Suspense, useState } from 'react';
+import { FC } from 'react';
 
 import Collection from '@/ui/collection/Collection';
-import { useCollection } from '@/ui/collection/useCollection';
 import Description from '@/ui/typography/Description';
 import Heading from '@/ui/typography/Heading';
-
-import { IDesignItem, IDesignItems } from '@/shared/types/design-item.types';
 
 import Meta from '@/utils/meta/Meta';
 

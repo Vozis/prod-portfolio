@@ -6,8 +6,6 @@ import { marqueeData } from '@/ui/marquee/marquee.data';
 import Description from '@/ui/typography/Description';
 import Heading from '@/ui/typography/Heading';
 
-import { IProjectItems } from '@/shared/types/projects.interface';
-
 import Meta from '@/utils/meta/Meta';
 
 import styles from './Projects.module.scss';
@@ -20,7 +18,8 @@ const Projects: FC = () => {
         <Description>
           Имею опыт работы как с Frontend, так и c Backend разработкой. Стек
           используемых технологий представлен современными средствами
-          разработки. Имею опыт работы с контейнеризацией приложений с помощью Docker, Nginx.
+          разработки. Имею опыт работы с контейнеризацией приложений с помощью
+          Docker, Nginx.
         </Description>
         <MarqueeEl items={marqueeData} />
         <Cards />

@@ -1,4 +1,4 @@
-import { IDesignItem, IDesignItems } from '@/shared/types/design-item.types';
+import { IDesignItem } from '@/shared/types/design-item.types';
 
 export const designItems: IDesignItem[] = [
   {

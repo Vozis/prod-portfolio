@@ -1,8 +1,8 @@
-import React, { FC, forwardRef, useState } from 'react';
-import { useSwiper, useSwiperSlide } from 'swiper/react';
-
-import MaterialIcon from '@/ui/MaterialIcon';
+import { FaArrowDown } from '@react-icons/all-files/fa/FaArrowDown';
+import { FaArrowUp } from '@react-icons/all-files/fa/FaArrowUp';
 import cn from 'clsx';
+import React, { FC, useState } from 'react';
+import { useSwiper, useSwiperSlide } from 'swiper/react';
 
 interface IArrowButton extends React.HTMLAttributes<HTMLDivElement> {
   variant: 'prev' | 'next';
@@ -17,7 +17,7 @@ const ArrowButton: FC<IArrowButton> = ({
   clickHandler,
 }) => {
   const swiper = useSwiper();
-  const swiperSlide = useSwiperSlide()
+  const swiperSlide = useSwiperSlide();
   const isPrev = variant === 'prev';
   const [isTrue, setIsTrue] = useState(false);
 
@@ -29,9 +29,12 @@ const ArrowButton: FC<IArrowButton> = ({
   return (
     <button
       onClick={handeClick}
-      className={cn('flex justify-center items-center text-red-500 text-3xl', {['text-gray-500']: isTrue})}
+      className={cn('flex justify-center items-center text-red-500 text-3xl', {
+        ['text-gray-500']: isTrue,
+      })}
     >
-      <MaterialIcon name={isPrev ? 'FaArrowUp' : 'FaArrowDown'} />
+      {isPrev ? <FaArrowUp /> : <FaArrowDown />}
+      {/*<MaterialIcon name={isPrev ? 'FaArrowUp' : 'FaArrowDown'} />*/}
     </button>
   );
 };
