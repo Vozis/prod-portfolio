@@ -1,16 +1,14 @@
+import { FaGoogle } from '@react-icons/all-files/fa/FaGoogle';
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram';
+import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp';
 import cn from 'clsx';
 import Link from 'next/link';
-import React, { FC, ReactNode, useEffect, useRef, useState } from 'react';
-import { useLockedBody, useOnClickOutside } from 'usehooks-ts';
+import React, { FC, useRef, useState } from 'react';
+import { useLockedBody } from 'usehooks-ts';
 
 import Menu from '@/layout/Navigation/header-menu/Menu';
-import {
-  headerMenu,
-  headerMenuLeft,
-  headerMenuRight,
-} from '@/layout/Navigation/header-menu/menu.data';
+import { headerMenu } from '@/layout/Navigation/header-menu/menu.data';
 
-import MaterialIcon from '@/ui/MaterialIcon';
 import BurgerMenu from '@/ui/burger-menu/BurgerMenu';
 
 import { useMediaQuery } from '@/hooks/useMediaQueries';
@@ -69,20 +67,20 @@ const Navigation: FC = () => {
           {/*  clickHandler={() => setIsMenuOpen(false)}*/}
           {/*  menu={headerMenuRight}*/}
           {/*/>*/}
-          <Menu
-            clickHandler={() => setIsMenuOpen(false)}
-            menu={headerMenu}
-          />
+          <Menu clickHandler={() => setIsMenuOpen(false)} menu={headerMenu} />
           {isMobile && (
             <div className={styles.socials}>
-              <a href={'mailto:sizov.ilya1996@gmail.com'}>
-                <MaterialIcon name={'FaGoogle'} />
+              <a href={'mailto:sizov.ilya1996@gmail.com'} target={'_blank'}>
+                <FaGoogle />
+                {/*<MaterialIcon name={'FaGoogle'} />*/}
               </a>
-              <a href={'https://wa.me/79994643719'}>
-                <MaterialIcon name={'FaWhatsapp'} />
+              <a href={'https://wa.me/79994643719'} target={'_blank'}>
+                <FaWhatsapp />
+                {/*<MaterialIcon name={'FaWhatsapp'} />*/}
               </a>
-              <a href={'https://tlgg.ru/IlyaaSizov'}>
-                <MaterialIcon name={'FaTelegram'} />
+              <a href={'https://tlgg.ru/IlyaaSizov'} target={'_blank'}>
+                <FaTelegram />
+                {/*<MaterialIcon name={'FaTelegram'} />*/}
               </a>
             </div>
           )}

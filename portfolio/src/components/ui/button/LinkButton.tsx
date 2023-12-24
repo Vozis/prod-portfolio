@@ -1,13 +1,16 @@
+import { FaFigma } from '@react-icons/all-files/fa/FaFigma';
+import { FaGithubAlt } from '@react-icons/all-files/fa/FaGithubAlt';
+import { FaLink } from '@react-icons/all-files/fa/FaLink';
+import { FaSafari } from '@react-icons/all-files/fa/FaSafari';
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram';
 import cn from 'clsx';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 
-import MaterialIcon from '@/ui/MaterialIcon';
-import { IButton, ILinkButton } from '@/ui/button/button.interface';
+import { ILinkButton } from '@/ui/button/button.interface';
 
-import { TypeMaterialIconName } from '@/shared/types/icon.types';
-
-import { useMediaQuery } from '@/hooks/useMediaQueries';
+const Icon = dynamic(() => import('@/ui/icon'));
 
 const LinkButton: FC<ILinkButton> = ({
   link,
@@ -16,7 +19,22 @@ const LinkButton: FC<ILinkButton> = ({
   children,
   ...rest
 }) => {
-  const isMobile = useMediaQuery('(max-width:425px)');
+  // const isMobile = useMediaQuery('(max-width:425px)');
+
+  const getIcon = (icon?: string) => {
+    switch (icon) {
+      case 'FaTelegram':
+        return <FaTelegram />;
+      case 'FaGithubAlt':
+        return <FaGithubAlt />;
+      case 'FaFigma':
+        return <FaFigma />;
+      case 'FaSafari':
+        return <FaSafari />;
+      default:
+        return <FaLink />;
+    }
+  };
 
   return (
     <Link
@@ -28,8 +46,11 @@ const LinkButton: FC<ILinkButton> = ({
         'hover:border-black hover:border-b',
       )}
     >
-      <MaterialIcon name={link.icon || 'FaLink'} />
-      {!isMobile && <span>{link.name}</span>}
+      {getIcon(link.icon)}
+      {/*{link.icon ? <Icon iconFamily={'fa'} icon={link.icon} /> : <FaLink />}*/}
+      {/*<MaterialIcon name={link.icon || 'FaLink'} />*/}
+      {/*{!isMobile && }*/}
+      <span>{link.name}</span>
       {children}
     </Link>
   );

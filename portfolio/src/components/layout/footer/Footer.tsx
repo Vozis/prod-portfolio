@@ -1,6 +1,8 @@
+import { FaGoogle } from '@react-icons/all-files/fa/FaGoogle';
+import { FaLongArrowAltRight } from '@react-icons/all-files/fa/FaLongArrowAltRight';
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram';
+import { FaWhatsapp } from '@react-icons/all-files/fa/FaWhatsapp';
 import React, { FC } from 'react';
-
-import MaterialIcon from '@/ui/MaterialIcon';
 
 import styles from './Footer.module.scss';
 
@@ -14,18 +16,22 @@ const Footer: FC = () => {
           }
         >
           До встречи
-          <MaterialIcon name={'FaLongArrowAltRight'} className={'mt-0.5'} />
+          <FaLongArrowAltRight className={'mt-0.5'} />
+          {/*<MaterialIcon name={'FaLongArrowAltRight'} className={'mt-0.5'} />*/}
         </p>
 
         <div className={styles.socials}>
-          <a href={'mailto:sizov.ilya1996@gmail.com'}>
-            <MaterialIcon name={'FaGoogle'} />
+          <a href={'mailto:sizov.ilya1996@gmail.com'} target={'_blank'}>
+            <FaGoogle />
+            {/*<MaterialIcon name={'FaGoogle'} />*/}
           </a>
-          <a href={'https://wa.me/79994643719'}>
-            <MaterialIcon name={'FaWhatsapp'} />
+          <a href={'https://wa.me/79994643719'} target={'_blank'}>
+            <FaWhatsapp />
+            {/*<MaterialIcon name={'FaWhatsapp'} />*/}
           </a>
-          <a href={'https://tlgg.ru/IlyaaSizov'}>
-            <MaterialIcon name={'FaTelegram'} />
+          <a href={'https://tlgg.ru/IlyaaSizov'} target={'_blank'}>
+            <FaTelegram />
+            {/*<MaterialIcon name={'FaTelegram'} />*/}
           </a>
         </div>
       </div>

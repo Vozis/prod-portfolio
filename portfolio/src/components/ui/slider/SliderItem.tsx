@@ -1,16 +1,14 @@
+import parse from 'html-react-parser';
 import Image from 'next/image';
-import React, { FC, forwardRef } from 'react';
-import { slide } from 'react-burger-menu';
+import React, { FC } from 'react';
 
 import LinkButton from '@/ui/button/LinkButton';
-import { ISlide } from '@/ui/slider/slider.interface';
 import Description from '@/ui/typography/Description';
 import { SubHeading } from '@/ui/typography/SubHeading';
 
 import { IProjectItem } from '@/shared/types/projects.interface';
 
 import styles from './Slider.module.scss';
-import parse from 'html-react-parser';
 
 const SliderItem: FC<{ slide: IProjectItem }> = ({ slide }) => {
   return (

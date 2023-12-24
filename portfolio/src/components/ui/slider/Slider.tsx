@@ -1,19 +1,16 @@
+import cn from 'clsx';
 import React, { FC, useEffect, useRef, useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
-import { Navigation, Virtual } from 'swiper';
+import { Virtual } from 'swiper';
 import 'swiper/css';
-import { Swiper, SwiperRef, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 import { useMediaQuery } from 'usehooks-ts';
 
 import ArrowButton from '@/ui/gallery/gallery-list/ArrowButton';
 import SliderItem from '@/ui/slider/SliderItem';
-import { ISlider } from '@/ui/slider/slider.interface';
-import { useSlider } from '@/ui/slider/useSlider';
 
-import { IProjectItem, IProjectItems } from '@/shared/types/projects.interface';
+import { IProjectItem } from '@/shared/types/projects.interface';
 
 import styles from './Slider.module.scss';
-import cn from 'clsx';
 
 const Slider: FC<{ items: IProjectItem[] }> = ({ items }) => {
   const isMobile = useMediaQuery('(max-width:768px)');

@@ -4,7 +4,6 @@ import { useMediaQuery } from 'usehooks-ts';
 
 import InfoBlock from '@/ui/Info-block/InfoBlock';
 import InfoItem from '@/ui/Info-block/info-item/InfoItem';
-import LinkButton from '@/ui/button/LinkButton';
 import SummaryButton from '@/ui/button/SummaryButton';
 import Description from '@/ui/typography/Description';
 import Heading from '@/ui/typography/Heading';
@@ -23,11 +22,13 @@ const About: FC = () => {
         <div className={'grid-auto-fit-lg grid'}>
           <div className={'flex flex-col gap-6 md:mr-24'}>
             <Heading title={'Больше, чем в двух словах'} />
-            <Description>Мне 26 лет. Программирование запало в душу более 10 лет назад, полноценно занимаюсь разработкой около 3 лет. Больше всего люблю нетривиальные задачи, за решением которых
-            Безумно интересно работать в небольшой команде с грандиозными планами :)
+            <Description>
+              Мне 26 лет. Программирование запало в душу более 10 лет назад,
+              полноценно занимаюсь разработкой около 3 лет. Больше всего люблю
+              нетривиальные задачи, за решением которых Безумно интересно
+              работать в небольшой команде с грандиозными планами :)
             </Description>
           </div>
-
           <Image
             src={'/images/me.jpg'}
             alt={'Моя фотография'}

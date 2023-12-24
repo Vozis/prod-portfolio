@@ -32,7 +32,6 @@ export const headerMenuRight: IMenu = {
   ],
 };
 
-
 export const headerMenu: IMenu = {
   title: 'Header-menu',
   items: [
@@ -57,4 +56,4 @@ export const headerMenu: IMenu = {
       link: '/contacts',
     },
   ],
-}
+};

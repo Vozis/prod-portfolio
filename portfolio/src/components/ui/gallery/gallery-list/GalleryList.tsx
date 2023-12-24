@@ -1,17 +1,9 @@
-import { FC, useRef, useState } from 'react';
-import {
-  A11y,
-  EffectFade,
-  Keyboard,
-  Navigation,
-  Pagination,
-  Scrollbar,
-} from 'swiper';
+import { FC } from 'react';
+import { EffectFade, Keyboard } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import ArrowButton from '@/ui/gallery/gallery-list/ArrowButton';
 import GalleryItem from '@/ui/gallery/gallery-list/gallery-item/GalleryItem';
 
 import { useMediaQuery } from '@/hooks/useMediaQueries';

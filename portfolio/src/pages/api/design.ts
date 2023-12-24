@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import { IDesignItem, IDesignItems } from '@/shared/types/design-item.types';
+import { IDesignItems } from '@/shared/types/design-item.types';
 
 import { designItems } from '@/store/design.data';
 

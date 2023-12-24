@@ -1,4 +1,4 @@
-import { IDesignItem, IDesignItems } from '@/shared/types/design-item.types';
+import { IDesignItems } from '@/shared/types/design-item.types';
 
 import { AxiosClassic, getDesignApi } from '@/config/config/api.config';
 

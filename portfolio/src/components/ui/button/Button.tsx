@@ -1,6 +1,6 @@
 import cn from 'clsx';
 import Link from 'next/link';
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 
 import { IButton } from '@/ui/button/button.interface';
 

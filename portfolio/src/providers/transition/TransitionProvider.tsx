@@ -1,4 +1,4 @@
-import { AnimatePresence, backInOut, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import React, { FC, PropsWithChildren } from 'react';
 

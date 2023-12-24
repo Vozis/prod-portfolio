@@ -9,10 +9,7 @@ interface SubHeading {
 export const SubHeading: FC<SubHeading> = ({ className, title }) => {
   return (
     <div
-      className={cn(
-        'text-xl xl:text-4xl lg:text-2xl font-medium',
-        className,
-      )}
+      className={cn('text-xl xl:text-4xl lg:text-2xl font-medium', className)}
     >
       {title}
     </div>

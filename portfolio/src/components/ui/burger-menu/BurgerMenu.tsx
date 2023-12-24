@@ -1,5 +1,5 @@
 import cn from 'clsx';
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 
 import styles from './BurgerMenu.module.scss';
 
