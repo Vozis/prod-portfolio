@@ -49,10 +49,6 @@ export const projectsData: IProjectItem[] = [
       </p>
       <Image src='/images/projects/sport/sport-main-loading.jpg'/>
       <Image src='/images/projects/sport/sport-profile-load-mobile.jpg'/>
-      <p>
-        Backend часть выполнена на фреймворке NestJS c созданием базы данных 
-        в PostgreSQL. Разработана таблица с организацией связи между сущностями. 
-      </p>
       <Image src='/images/projects/sport/sport-table-2.jpg'/>
      `,
     imageUrl: '/images/projects/sport/sport-main.jpg',
